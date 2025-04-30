@@ -18,7 +18,7 @@ jobs:
     - name: install_cow_say
       run: pip install cowsay
     - name: say-hello-world_cowsay
-      run: cowsay -c cheese -t 'hey therer'
+      run: cowsay -c cheese -t "hey therer"
     - name: install_cowpy
       run: pip install cowpy
     - name: print_cowpy
