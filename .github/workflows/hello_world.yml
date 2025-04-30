@@ -1,13 +1,15 @@
 # Hello World example for DTU biosustain and DTU bioengineering Data Club
 
-name: Hello World example
+name: Hello World example # define name of workflow
 
 on:
-  push:
+  push: # trigger workflow on push to main branch
+    branches:
+      - main
 
 jobs:
   say-hello-world:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-latest #Github's docker image with kubernetes
     steps:
     - name: biosustain
       run: echo "Hello DTU biosustain!"
