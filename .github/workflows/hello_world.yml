@@ -15,3 +15,15 @@ jobs:
       run: echo "Hello DTU biosustain!"
     - name: bioengineering
       run: echo "Hello DTU bioengineering!"
+    - name: install_cow_say
+      run: sudo apt-get install -y cowsay
+    - name: say-hello-world_cowsay
+      run: |
+        cowsay "Hello DTU biosustain and DTU bioengineering Data Club!"
+    - name: install_cowpy
+      run: pip install cowpy
+    - name: print_cowpy
+      run: cowpy -c tux hi there
+    - name: say-hello-world_cowpy
+      run: |
+        python -c "from cowpy import cow; print(cow.Moose().milk('Hello DTU biosustain and DTU bioengineering Data Club!'))"
