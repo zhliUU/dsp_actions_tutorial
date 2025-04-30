@@ -16,7 +16,7 @@ jobs:
     - name: bioengineering
       run: echo "Hello DTU bioengineering!"
     - name: install_cow_say
-      run: sudo apt-get install -y cowsay
+      run: pip install cowsay
     - name: say-hello-world_cowsay
       run: cowsay -c cheese -t 'hey therer'
     - name: install_cowpy
